@@ -1,0 +1,22 @@
+#include<reg52.h>
+sbit D1=P1^1;
+sbit D2=P1^2;
+unsigned int i,j;
+void main(void)
+{
+	while(1)
+	{
+		D1=0;
+		for(i=1000;i>0;i--)
+		for(j=144;j>0;j--);
+		D1=1;
+		for(i=1000;i>0;i--)
+		for(j=144;j>0;j--);
+		D2=0;
+		for(i=1000;i>0;i--)
+		for(j=144;j>0;j--);
+		D2=1;
+		for(i=1000;i>0;i--)
+		for(j=144;j>0;j--);
+	}
+	}
